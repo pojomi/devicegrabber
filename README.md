@@ -6,6 +6,11 @@
 device found in \`/dev/input/\` with a filename of \`event\` followed by a number.
 
 
+## Dependencies
+
+-   \`libevdev\`
+
+
 ## Installation
 
     git clone https://github.com/pojomi/devicegrabber.git
