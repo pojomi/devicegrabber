@@ -8,6 +8,8 @@ device found in \`/dev/input/\` with a filename of \`event\` followed by a numbe
 
 ## Installation
 
+    git clone https://github.com/pojomi/devicegrabber.git
+
 From repo root directory:
 
     make install
