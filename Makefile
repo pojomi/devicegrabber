@@ -10,4 +10,4 @@ run:
 	sudo $(MAKE) -C $(src_d) run
 
 clean:
-	sudo $(MAKE) -C $(src_d) run
+	sudo $(MAKE) -C $(src_d) clean
