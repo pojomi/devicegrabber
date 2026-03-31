@@ -1,0 +1,6 @@
+Project.ede
+.gitignore~
+/src/dg.c~
+/src/main
+/src/dg-daemon-script.sh~
+/src/devicegrabber
