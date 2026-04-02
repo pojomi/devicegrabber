@@ -276,6 +276,7 @@ void dg_write_service_file(char *event_file, char *device_name) {
 void dg_handle_systemd(char *service_name) {
   char command[256];
   memset(command, 0, sizeof(command));
-  sprintf(command, "dg-daemon-script %s", service_name);
+	sprintf(command, "systemctl daemon-reload && systemctl enable %s && systemctl start %s",
+					service_name, service_name);
   system(command); 
 }
