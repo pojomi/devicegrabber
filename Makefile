@@ -1,13 +1,17 @@
-src_d = src
+cc = gcc
+bin = devicegrabber
+bindir = /usr/bin
+src = src/main.c src/dg.c
+cflags = -levdev
 
-all:
-	$(MAKE) -C $(src_d) all
+all: $(src)
+	$(cc) $(src) -o $(bin) $(cflags)
 
 install:
-	sudo $(MAKE) -C $(src_d) install
+	sudo $(cc) $(src) -o $(bindir)/$(bin) $(cflags)
 
 run:
-	sudo $(MAKE) -C $(src_d) run
+	sudo $(bin)
 
 clean:
-	sudo $(MAKE) -C $(src_d) clean
+	sudo rm $(bin) $(bindir)/$(bin)
