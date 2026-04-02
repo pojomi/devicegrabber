@@ -11,7 +11,8 @@
 
 void dg_print_help() {
 	printf(
-				 "\nUSAGE: devicegrabber [OPTION]... [FILE]\n\n"
+				 "\nUSAGE: devicegrabber [OPTION]... [FILE]\n"
+				 "       devicegrabber\n\n"
 				 "Arguments required for long and short options\n"
 				 "  \e[1m-F, -f, --filename\e[m\n"
 				 "      /dev/input/eventX\n\n"
