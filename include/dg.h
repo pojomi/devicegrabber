@@ -13,7 +13,7 @@
 
 typedef unsigned long size_t;
 
-
+void dg_print_help();
 void dg_free(void **arr, size_t count);
 void **dg_realloc_arr(void **arr, size_t count);
 void dg_free_all_and_exit(void **arr1, void **arr2, size_t count);

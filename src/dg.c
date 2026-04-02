@@ -9,6 +9,16 @@
 #include <libevdev-1.0/libevdev/libevdev.h>
 #include "../include/dg.h"
 
+void dg_print_help() {
+	printf(
+				 "\nUSAGE: devicegrabber [OPTION]... [FILE]\n\n"
+				 "Arguments required for long and short options\n"
+				 "  \e[1m-F, -f, --filename\e[m\n"
+				 "      /dev/input/eventX\n\n"
+				 "  \e[1m-h, --help\e[m\n\n"
+				 );
+}
+
 void dg_free(void **arr, size_t count) {
   for (int i = 0; i < count; i++) {
     if (arr[i] == NULL) continue;
