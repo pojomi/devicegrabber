@@ -179,6 +179,12 @@ void dg_get_selection(char **device_names, char **event_files, size_t count) {
       printf("Exiting...\n");
       dg_free_all_and_exit((void**)device_names, (void**)event_files, count);
   }
+  if (response > count) {
+    printf("\nInvalid choice\n\n");
+    sleep(1);
+    dg_print_list(device_names, event_files, count);
+  }
+    
   response--;
   printf("Selected %s located at %s\n", device_names[response],
          event_files[response]);
