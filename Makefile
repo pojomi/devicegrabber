@@ -10,6 +10,9 @@ all: $(src)
 install:
 	sudo $(cc) $(src) -o $(bindir)/$(bin) $(cflags)
 
+test:
+	sudo ./$(bin)
+
 run:
 	sudo $(bin)
 
