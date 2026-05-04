@@ -45,10 +45,10 @@ terminal defined command to kill the process (commonly `C-c`).
 Create a systemd unit file for the selected device. This will be a standard `.service`
 file located in `/etc/systemd/system/`. It will **automatically** be enabled and started.
 After selecting Option 2, the last line printed will provide the full name of the file
-generated. General format is `devicegrabber-event<number>.service`.
+generated. General format is `devicegrabber-<device_vendor_id>-<device_product_id>.service`.
 
 To disable:
 
-    sudo systemctl disable devicegrabber-event<number>.service &&
+    sudo systemctl disable devicegrabber-<device_vendor_id>-<device_product_id>.service &&
     sudo killall devicegrabber
 
